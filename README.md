@@ -1,4 +1,4 @@
-# Check Aanimals
+# Check Animals
 
 **`Check Animals`** is a function on an html page that:
 * Accepts a name of any animal from a user
