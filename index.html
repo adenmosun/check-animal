@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<title>Go on an adventure of animals</title>
+	<link rel="stylesheet"  href="main.css">
+</head>
+<body>
+  <div class="grid">
+    <div class="row">
+		<div class="start-sidebar"></div>
+		<div class="start-sidebox">
+			<h3>Discover More Animals</h3>
+			<h2>Can you tell us an animal we dont know about yet?</h2>
+			
+			<button onclick="check_animal()"> Click to start </button>
+
+			<p id="answer"></p>
+				
+		<script>
+
+        function check_animal() {
+          var txt;
+          var animals = ["dog", "cat", "lizard", "rabbit"];
+          var input_animal = prompt("Type in an animal name into the box below");
+           
+           for (var i = 0; i < animals.length; i++) {
+
+             if (animals[i].match(input_animal.toLowerCase())) {
+             txt = "Animal already present in list or no input was given "
+             break
+
+          } else {
+
+          	animals.push(input_animal);
+            txt = "Your animal " + input_animal + " has been added to the list." +"<br>"+ "Thank you"  +"<br>"+ " Animals: " + animals;
+            break
+
+         }
+     }
+           document.getElementById("answer").innerHTML = txt;
+          }
+           </script>
+
+			<a href="animals.txt">Click to here for more animals</a>
+		</div>
+	</div>
+  </div>
+
+</body>
+</html>
+
