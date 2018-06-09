@@ -14,7 +14,7 @@
 .start-sidebar {
   width: 60%;
   height: 900px;
-  background-image: url('image/sideImage.jpg');
+  background-image: url('./image/sideImage.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
   margin-right: 2%;
